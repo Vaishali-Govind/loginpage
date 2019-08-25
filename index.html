@@ -179,25 +179,26 @@
                </div>
             </div>
            
+           
             <div class="column s6 m10 offset-m5">
                <div class="carousel" id="demo-carousel">
-                  <a class="carousel-item" href="#one!"><img src="goal1.png" class="goal"></a>
-                  <a class="carousel-item" href="#two!"><img src="goal2.png" class="goal"></a>
-                  <a class="carousel-item" href="#three!"><img src="goal3.png" class="goal"></a>
-                  <a class="carousel-item" href="#four!"><img src="goal4.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal5.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal6.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal7.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal8.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal9.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal10.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal11.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal12.jpg" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal13.png" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal14.jpg" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal15.png"class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal16.jpg" class="goal"></a>
-                  <a class="carousel-item" href="#five!"><img src="goal17.jpg" class="goal"></a>
+                  <a class="carousel-item" href="#two!"><img src="goal2.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#one!"><img src="goal1.png" class="goal"  onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#three!"><img src="goal3.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#four!"><img src="goal4.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal5.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal6.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal7.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal8.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal9.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal10.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal11.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal12.jpg" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal13.png" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal14.jpg" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal15.png"class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal16.jpg" class="goal" onclick="setupEvents()"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal17.jpg" class="goal" onclick="setupEvents()"></a>
                </div>
             </div>
          </div>
@@ -206,8 +207,27 @@
          $(document).ready(function(){
                $('#demo-carousel').carousel();
              });
+
+
+      </script>
+
+      <script>
+      function setupEvents() {
+    if (typeof window.ontouchstart !== 'undefined') {
+       view[0].addEventListener('touchstart', tap);
+       view[0].addEventListener('touchmove', drag);
+       view[0].addEventListener('touchend', release);
+    }
+    view[0].addEventListener('mousedown', tap);
+    view[0].addEventListener('mousemove', drag);
+    view[0].addEventListener('mouseup', release);
+    view[0].addEventListener('mouseleave', release);
+    view[0].addEventListener('click', click);
+}
       </script>
    </body>
 </html>
+
+
 
 
