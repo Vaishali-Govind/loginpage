@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <style>
+	 .box .column {
+		display: inline-block;
+      margin-left: 3%;
+      margin-right: -7%;
+      margin-top: -2%;
+     
+    
+	}
+   .box {
+      /* border-style: solid;
+      border-width: thin;
+       border-left: white; 
+       border-top: white;
+       border-bottom: white; */
+       /* border-right: teal; */
+       /* border-right: thin solid teal */
+   }
+         .goal{
+         width: 36em;
+         height: 18em;
+         }
+         .carousel{
+         width: 40em;
+         height: 40em;
+         /* margin: 0 auto; */
+         display: table-cell;
+         margin-left: 40%;
+         margin-top:2%;
+         border-left: thin solid teal;
+        
+         }
+         body {
+         margin: 0;
+         padding: 0;
+         font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+         }
+         .form_div {
+         margin-top: -2%;
+         margin-left: 7%;
+         width: 55%;
+         padding: 2%;
+         border: 3px solid #f1f1f1;
+         box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+         display: inline-block;
+      }
+        .carousel-item {
+                
+          width: 20em;
+          height: 5em;;
+        }
+        /* .carousel .carousel-item>img {
+    width: 110%; 
+    height: 100%;
+  
+   
+} */
+
+         .form_div input[type="text"],
+         input[type="password"] {
+         width: 100%;
+         padding: 1.02em 1em;
+         margin: 1em 0;
+         /* display: inline-block; */
+         border: 1px solid #ccc;
+         box-sizing: border-box;
+         }
+         .login {
+         background-color: #009688;
+         color: white;
+         padding: 1.08em 1em;
+         margin: 3% 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         }
+         button:hover {
+         opacity: 0.8;
+         }
+         .cancelbtn {
+         width: auto;
+         background-color: #fc5258;
+         color: white;
+         padding: 1.0em 1em;
+         margin: -1% 0;
+         border: none;
+         cursor: pointer;
+         width: 40%;
+         }
+         .imgcontainer {
+         text-align: center;
+         margin: 1em 0 1.02em 0;
+         }
+         .avatar {
+         width: 7em;
+         height: 7em;
+         margin-top: 1%;
+         }
+         
+         span.psw {
+         float: right;
+         padding-top: 1em;
+         }
+         a {
+         color: teal;
+         }
+         @media screen and (max-width: 576px) {
+         .form_div {
+         width: 90%;
+         margin: 0 auto;
+         margin-top: 5%;
+         }
+         
+         
+         img{
+         width: 30em;
+         height: 10em;
+         }
+         }
+         /*
+	.line {
+         height: 100%;
+         }
+	.containe {
+         padding: 1.05em;
+         }
+	.container{
+         margin: 0 auto;
+         width: 100%;
+         }
+	.container {
+         width: 50%;
+         margin-top: -40em;
+         }
+         .line{
+         width: 1vh;
+         height: 100vh;
+         margin-top: -50em;
+         margin-left: 35em;
+         border-left: thin solid teal
+         }*/
+        
+
+      </style>
+     
+   </head>
+   <body>
+      <div class="box">
+         <div class="row">
+            <div class="column" >
+               <div class="form_div ">
+                  <div class="imgcontainer">
+                     <img src="sust.jpg" class="avatar">
+                  </div>
+                  <div class="">
+                     <label for="uname"><b>Username</b></label>
+                     <input type="text" placeholder="Enter Username" name="uname" required>
+                     <label for="psw"><b>Password</b></label>
+                     <input type="password" placeholder="Enter Password" name="psw" required>
+                     <button type="submit" class="login">Login</button>
+                     <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                     </label>
+                  </div>
+                  <div class="" style="background-color:#f1f1f1">
+                     <button type="button" class="cancelbtn">Create Account</button>
+                     <span class="psw"><a href="#">Forgot password?</a></span>
+                  </div>
+               </div>
+            </div>
+           
+            <div class="column s6 m10 offset-m5">
+               <div class="carousel" id="demo-carousel">
+                  <a class="carousel-item" href="#one!"><img src="goal1.png" class="goal"></a>
+                  <a class="carousel-item" href="#two!"><img src="goal2.png" class="goal"></a>
+                  <a class="carousel-item" href="#three!"><img src="goal3.png" class="goal"></a>
+                  <a class="carousel-item" href="#four!"><img src="goal4.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal5.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal6.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal7.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal8.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal9.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal10.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal11.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal12.jpg" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal13.png" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal14.jpg" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal15.png"class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal16.jpg" class="goal"></a>
+                  <a class="carousel-item" href="#five!"><img src="goal17.jpg" class="goal"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         $(document).ready(function(){
+               $('#demo-carousel').carousel();
+             });
+      </script>
+   </body>
+</html>
+
+
