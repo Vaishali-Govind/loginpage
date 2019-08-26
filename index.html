@@ -158,6 +158,45 @@
      
    </head>
    <body>
+	   
+            <nav>
+           
+              <div class="nav-wrapper ">
+           
+                <a href="#!" class="brand-logo"><img src="./sust.jpg" alt="" class="logo"></a>
+           
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+           
+                <ul class="right hide-on-med-and-down">
+           
+                  <li class="active"><a href="https://www.jquery-az.com/jquery-tips/">jQuery</a></li>
+           
+                  <li><a href="https://www.jquery-az.com/javascript-tutorials/">JavaScript</a></li>
+           
+                  <li><a href="https://www.jquery-az.com/html-tutorials/">HTML</a></li>
+           
+                  <li><a href="https://www.jquery-az.com/css-tutorials/">CSS</a></li>
+           
+                </ul>
+           
+                <ul class="side-nav" id="mobile-demo">
+           
+                  <li class="active"><a href="https://www.jquery-az.com/jquery-tips/">jQuery</a></li>
+           
+                  <li><a href="https://www.jquery-az.com/javascript-tutorials/">JavaScript</a></li>
+           
+                  <li><a href="https://www.jquery-az.com/html-tutorials/">HTML</a></li>
+           
+                  <li><a href="https://www.jquery-az.com/css-tutorials/">CSS</a></li>
+           
+                </ul>
+           
+              </div>
+           
+            </nav>
+           
+	   
+	   
       <div class="box">
          <div class="row">
             <div class="column" >
@@ -206,28 +245,56 @@
             </div>
          </div>
       </div>
+	   
+	   
+      <footer class="page-footer teal">
+         <div class="container">
+           <div class="row">
+             <!-- <div class="col l6 s12">
+               <h5 class="white-text">Footer Content</h5>
+               <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+             </div> -->
+             <div class="col l4 offset-l5 s12">
+               <!-- <h5 class="white-text">Links</h5> -->
+               <ul>
+                 <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook"></i></a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i></a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-linkedin"></i></a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-youtube"></i></a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+               Copyright © 2019 M/s Sustainable Alchemist Enterprises - All Rights Reserved.
+
+               UAM No.: WB10D0021535
+               
+               GSTIN: 19AURPB8291M1ZR
+           <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+           </div>
+         </div>
+       </footer>
+           
+
+	   
       <script>
+       <script>
          $(document).ready(function(){
                $('#demo-carousel').carousel();
              });
 
 
+             $(".dropdown-trigger").dropdown();
+
+             $(".button-collapse").sideNav();
       </script>
 
-      <script>
-      function setupEvents() {
-    if (typeof window.ontouchstart !== 'undefined') {
-       view[0].addEventListener('touchstart', tap);
-       view[0].addEventListener('touchmove', drag);
-       view[0].addEventListener('touchend', release);
-    }
-    view[0].addEventListener('mousedown', tap);
-    view[0].addEventListener('mousemove', drag);
-    view[0].addEventListener('mouseup', release);
-    view[0].addEventListener('mouseleave', release);
-    view[0].addEventListener('click', click);
-}
+
       </script>
+
+  
    </body>
 </html>
 
